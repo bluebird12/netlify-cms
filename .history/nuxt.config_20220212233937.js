@@ -16,8 +16,6 @@ export default {
         ]
     },
 
-    targe: 'static',
-
     // Global CSS: https://go.nuxtjs.dev/config-css
     css: [],
 
@@ -41,17 +39,5 @@ export default {
     },
 
     // Build Configuration: https://go.nuxtjs.dev/config-build
-    build: {},
-    generate: {
-        routes: function() {
-            const fs = require('fs');
-            const path = require('path');
-            return fs.readdirSync('./content/blog').map(file => {
-                return {
-                    route: `/blog/${path.parse(file).name}`, // Return the slug
-                    payload: require(`./content/blog/${file}`),
-                };
-            });
-        },
-    },
+    build: {}
 }
