@@ -1,5 +1,5 @@
 ---
-title: Lorem ipsum
+title: Post one
 date: 2022-02-12T22:37:04.211Z
 description: Description
 ---
