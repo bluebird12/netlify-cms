@@ -1,6 +1,10 @@
 <template>
   <div>
     <li v-for="key of keys" :key="key.slug">
+      {{ key.ships }}
+      {{ key.years }}
+      {{ key.tons }}
+      {{ key.voyages }}
       {{ key.portcalls }}
     </li>
     <li v-for="(post, index) of posts" :key="index">

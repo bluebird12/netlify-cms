@@ -13,7 +13,11 @@ collections:
     create: true
     fields:
     - { label: 'Title', name: 'title', widget: 'string' }
-    - { label: 'Portcalls', name: 'portcalls', widget: 'number' }
+    - { label: 'Ships', name: 'ships', widget: 'number' }
+    - { label: 'Years of Average Age', name: 'years', widget: 'number' }
+    - { label: 'Milion tons', name: 'tons', widget: 'number' }
+    - { label: 'Voyages', name: 'voyages', widget: 'number' }
+    - { label: 'Port Calls', name: 'portcalls', widget: 'number' }
   - name: 'blog'
     label: 'Blog'
     folder: 'content/blog'
