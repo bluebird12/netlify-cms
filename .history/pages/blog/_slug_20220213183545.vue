@@ -1,10 +1,8 @@
 <template>
   <div>
     <h2>{{ post.title }}</h2>
-    <p>{{ post.date }}</p>
+    <p>{{ post. date }}</p>
     <nuxt-content :document="post" />
-    <div v-if="manual_pdf"></div>
-      <a :href="post.manual_pdf">nnn</a>
   </div>
 </template>
 
