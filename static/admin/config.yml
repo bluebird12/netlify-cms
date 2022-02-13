@@ -11,8 +11,8 @@ collections:
     folder: 'content/keyfigures'
     format: 'frontmatter'
     create: true
-    identifier_field: name
     fields:
+    - { label: 'Title', name: 'title', widget: 'string' }
     - { label: 'Portcalls', name: 'portcalls', widget: 'number' }
   - name: 'blog'
     label: 'Blog'
