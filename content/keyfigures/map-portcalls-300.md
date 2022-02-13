@@ -1,5 +1,5 @@
 ---
-title: Entries
+title: Numbers
 ships: 12
 years: 13
 tons: 14
