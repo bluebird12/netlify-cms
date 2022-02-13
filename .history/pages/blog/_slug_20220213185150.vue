@@ -3,9 +3,7 @@
     <h2>{{ post.title }}</h2>
     <p>{{ post.date }}</p>
     <nuxt-content :document="post" />
-    <div v-if="manual_pdf">
-      <a :href="post.manual_pdf">General Arraangement</a>
-    </div>
+      <a :href="post.manual_pdf">nnn</a>
   </div>
 </template>
 

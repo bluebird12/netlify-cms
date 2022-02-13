@@ -4,7 +4,7 @@
     <p>{{ post.date }}</p>
     <nuxt-content :document="post" />
     <div v-if="manual_pdf">
-      <a :href="post.manual_pdf">General Arraangement</a>
+      <a :href="post.manual_pdf">nnn</a>
     </div>
   </div>
 </template>
