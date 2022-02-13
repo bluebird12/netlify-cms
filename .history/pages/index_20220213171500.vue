@@ -1,7 +1,7 @@
 <template>
   <div>
     <li v-for="post of posts" :key="post.slug">
-      <NuxtLink :to="post.slug">{{ post.title }}</NuxtLink>
+      <NuxtLink :to="{ name: 'blog-slug', params: { slug: post.slug } }">mm</NuxtLink>
     </li>
   </div>
 </template>
