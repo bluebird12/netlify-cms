@@ -3,10 +3,10 @@
     <h2>{{ post.title }}</h2>
     <p>{{ post.date }}</p>
     <nuxt-content :document="post" />
-    <div v-if="manualga_pdf">
-      <a :href="post.manualga_pdf">General Arraangement</a>
+    <div v-if="post.manualga_pdf">
+      <a :href="post.manualga_pdf">General Arrangement</a>
     </div>
-      <div v-if="manualcp_pdf">
+      <div v-if="post.manualcp_pdf">
       <a :href="post.manualcp_pdf">Capacity Plan</a>
     </div>
   </div>
