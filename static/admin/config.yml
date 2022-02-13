@@ -10,6 +10,7 @@ collections:
     label: 'Blog'
     folder: 'content/blog'
     format: 'frontmatter'
+    sortable_fields: ['sortorder']
     create: true
     slug: '{{year}}-{{month}}-{{day}}-{{slug}}'
     editor:
@@ -20,5 +21,5 @@ collections:
       - { label: 'Description', name: 'description', widget: 'string' }
       - { label: 'Body', name: 'body', widget: 'markdown' }
       - { label: 'General Arrangement', name: 'manualga_pdf', widget: 'file', required: false }
-      - { label: 'Cpacity Plan', name: 'manualcp_pdf', widget: 'file', required: false }
+      - { label: 'Capacity Plan', name: 'manualcp_pdf', widget: 'file', required: false }
       - { label: 'Sort order', name: 'sortorder', default: '1', widget: 'number' }
