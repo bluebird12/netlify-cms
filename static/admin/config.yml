@@ -19,7 +19,7 @@ collections:
     - { label: 'Voyages', name: 'voyages', widget: 'number' }
     - { label: 'Port Calls', name: 'portcalls', widget: 'number' }
   - name: 'blog'
-    label: 'Blog'
+    label: 'Ships'
     folder: 'content/blog'
     format: 'frontmatter'
     sortable_fields: ['sortorder']
