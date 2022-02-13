@@ -6,6 +6,13 @@ media_folder: static/img
 public_folder: /img
 
 collections:
+  - name: 'keyfigures'
+    label: 'Key figures'
+    folder: 'content/blog'
+    format: 'frontmatter'
+    create: true
+    fields:
+    - { label: 'Portcalls', name: 'portcalls', widget: 'number' }
   - name: 'blog'
     label: 'Blog'
     folder: 'content/blog'
