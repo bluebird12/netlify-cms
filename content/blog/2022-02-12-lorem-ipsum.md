@@ -1,6 +1,5 @@
 ---
 manualcp_pdf: /img/sonderthemen-google-spreadsheet.pdf
-order: 0
 title: Post one
 date: 2022-01-02T22:37:04.211Z
 description: Description

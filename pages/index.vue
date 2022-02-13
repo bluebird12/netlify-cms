@@ -1,6 +1,6 @@
 <template>
   <div>
-    <li v-for="post of posts" :key="post.slug">
+    <li v-for="(post, index) of posts" :key="index">
       <NuxtLink :to="{ name: 'blog-slug', params: { slug: post.slug } }">{{ post.title }}</NuxtLink>
     </li>
   </div>
@@ -8,8 +8,8 @@
 
 <script>
 export default {
-   async asyncData({ $content }) {
-    const posts = await $content("blog").fetch();
+   async asyncData({ $content, params }) {
+    const posts = await $content('blog').sortBy('sortorder', 'asc').fetch();
 
     return {
       posts,

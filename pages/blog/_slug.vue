@@ -2,6 +2,7 @@
   <div>
     <h2>{{ post.title }}</h2>
     <p>{{ post.date }}</p>
+    <p>{{ post.sortorder }}</p>
     <nuxt-content :document="post" />
     <div v-if="post.manualga_pdf">
       <a :href="post.manualga_pdf">General Arrangement</a>
