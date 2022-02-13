@@ -7,6 +7,6 @@ Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod 
 
 static/img/sonderthemen-google-spreadsheet.pdf
 
-moa
+Moa
 
-milla
+Milla
