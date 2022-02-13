@@ -12,6 +12,7 @@ collections:
     format: 'frontmatter'
     create: true
     slug: '{{year}}-{{month}}-{{day}}-{{slug}}'
+    sortable_fields: ['blog']
     editor:
       preview: false
     fields:
@@ -20,4 +21,4 @@ collections:
       - { label: 'Description', name: 'description', widget: 'string' }
       - { label: 'Body', name: 'body', widget: 'markdown' }
       - { label: "General Arrangement", name: "manualga_pdf", widget: "file", required: false}
-      - { label: "Capacity Plan", name: "manualcp_pdf", widget: "file", required: false}
+      - { label: "Cpacity Plan", name: "manualcp_pdf", widget: "file", required: false}
