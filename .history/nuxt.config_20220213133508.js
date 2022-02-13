@@ -17,23 +17,17 @@ export default {
     },
 
     target: 'static',
-    // Modules: https://go.nuxtjs.dev/config-modules
-    modules: [
-        // https://go.nuxtjs.dev/bootstrap
-        'bootstrap-vue/nuxt',
-        '@nuxt/content',
-    ],
     generate: {
-        // routes: function() {
-        //     const fs = require('fs');
-        //     const path = require('path');
-        //     return fs.readdirSync('./content/blog').map(file => {
-        //         return {
-        //             route: `/blog/${path.parse(file).name}`, // Return the slug
-        //             payload: require(`./content/blog/${file}`),
-        //         };
-        //     });
-        // },
+        routes: function() {
+            const fs = require('fs');
+            const path = require('path');
+            return fs.readdirSync('./content/blog').map(file => {
+                return {
+                    route: `/blog/${path.parse(file).name}`, // Return the slug
+                    payload: require(`./content/blog/${file}`),
+                };
+            });
+        },
     },
     // Global CSS: https://go.nuxtjs.dev/config-css
     css: [],
@@ -47,6 +41,12 @@ export default {
     // Modules for dev and build (recommended): https://go.nuxtjs.dev/config-modules
     buildModules: [],
 
+    // Modules: https://go.nuxtjs.dev/config-modules
+    modules: [
+        // https://go.nuxtjs.dev/bootstrap
+        'bootstrap-vue/nuxt',
+        '@nuxt/content',
+    ],
     content: {
         // Options
     },
