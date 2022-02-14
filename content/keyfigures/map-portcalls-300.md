@@ -1,5 +1,5 @@
 ---
-title: Numbers
+title: Key figures
 ships: 12
 years: 13
 tons: 14
