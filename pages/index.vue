@@ -1,13 +1,13 @@
 <template>
   <div>
+    <div id="keyFigures">
+      {{ key.ships }}<br>
+      {{ key.years }}<br>
+      {{ key.tons }}<br>
+      {{ key.voyages }}<br>
+      {{ key.portcalls }}
+    </div>
     <ul>
-      <li v-for="key of keys" :key="key.slug">
-        {{ key.ships }}
-        {{ key.years }}
-        {{ key.tons }}
-        {{ key.voyages }}
-        {{ key.portcalls }}
-      </li>
       <li v-for="(post, index) of posts" :key="index">
         <NuxtLink :to="{ name: 'blog-slug', params: { slug: post.slug } }">{{ post.title }}</NuxtLink>
         <p>{{ post.date }}</p>
