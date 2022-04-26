@@ -1,6 +1,6 @@
 <template>
   <div>
-    <div id="keyFigures">
+    <div id="keyFigures" v-for="key of keys" :key="key.slug">
       {{ key.ships }}<br>
       {{ key.years }}<br>
       {{ key.tons }}<br>
